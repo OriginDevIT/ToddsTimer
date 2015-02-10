@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Todd Clark Timer</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="main.css">
+        
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+        <meta name="apple-mobile-web-app-title" content="Todd Clark Timer">
+        <link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+        <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+        <meta name="msapplication-TileColor" content="#2d89ef">
+        <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<!-- Lets make a simple stopwatch using CSS3 -->
+<!-- Time for the markup -->
+<!-- The core logic is a simple div containing numbers being moved
+using keyframe animations. The numbers have space between them so that they
+can be aligned vertically easily by reducing the container width. Lets
+wrap up the 'numbers' in a cell to display only 1 digit-->
+        <header>
+            <div class="container fixedtop">
+                <div class="row">
+                    <div class="col-xs-7">
+                        <input id="start" name="controls" type="radio" />
+                        <input id="stop" name="controls" type="radio" />
+                        <input id="reset" name="controls" type="radio" />
+                        <div class="timer">
+                            <div class="cell">
+                                <div class="numbers tenhour moveten">0 1 2 3 4 5 6 7 8 9</div>
+                            </div>
+                            <div class="cell">
+                                <div class="numbers hour moveten">0 1 2 3 4 5 6 7 8 9</div>
+                            </div>
+                            <div class="cell divider"><div class="numbers">:</div></div>
+                            <div class="cell">
+                                <div class="numbers tenminute movesix">0 1 2 3 4 5 6</div>
+                            </div>
+                            <div class="cell">
+                                <div class="numbers minute moveten">0 1 2 3 4 5 6 7 8 9</div>
+                            </div>
+                            <div class="cell divider"><div class="numbers">:</div></div>
+                            <div class="cell">
+                                <div class="numbers tensecond movesix">0 1 2 3 4 5 6</div>
+                            </div>
+                            <div class="cell">
+                                <div class="numbers second moveten">0 1 2 3 4 5 6 7 8 9</div>
+                            </div>
+                            <div class="cell divider"><div class="numbers">.</div></div>
+                            <div class="cell">
+                                <div class="numbers milisecond moveten">0 1 2 3 4 5 6 7 8 9</div>
+                            </div>
+                            <div class="cell">
+                                <div class="numbers tenmilisecond moveten">0 1 2 3 4 5 6 7 8 9</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-5">
+                        <div id="timer_controls">
+                            <label for="start" class="btn btn-success"><span class="glyphicon glyphicon-play"></span></label>
+                            <label for="stop" class="btn btn-danger"><span class="glyphicon glyphicon-stop"></span></label>
+                            <label for="reset" class="btn btn-primary"><span class="glyphicon glyphicon-refresh"></span></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <iframe src="http://docs.google.com/gview?url=http://infolab.stanford.edu/pub/papers/google.pdf&embedded=true" style="width:100%; height:1000px;" frameborder="0"></iframe>
+        </div>
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
+</body>
+</html>
