@@ -191,10 +191,6 @@ Copyright 2015 Origin Development & IT, Inc.
 
 @media screen and (min-width: 1200px;)
 {
-}
-
-@media screen and (min-width: 1600px;)
-{
     .timer {
         padding: 10px;
         border: 3px solid #efefef;
@@ -217,7 +213,7 @@ Copyright 2015 Origin Development & IT, Inc.
     /*Styles for the controls*/
     #timer_controls label {
         padding: .6em .7em;
-        font-size: 20px;
+        font-size: 40px;
     }
     @keyframes moveten {
         0% {top: 0;}
@@ -241,4 +237,9 @@ Copyright 2015 Origin Development & IT, Inc.
         100% {top: -180px;} 
         /*height = 30. digits = 6. hence -180 to move it completely to the top*/
     }
+}
+
+@media screen and (min-width: 1600px;)
+{
+
 }
